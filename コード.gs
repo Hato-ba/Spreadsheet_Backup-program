@@ -18,7 +18,7 @@ function backupSpreadsheet() {
 
 // ▼ 7日以上前のバックアップファイルを自動削除
 function deleteOldBackups() {
-  const folderId = '1b4MFo-Yy4bv-p6rGw2FdJV_f3qjCe-kB';
+  const folderId = '1b4MFo-Yy4bv-p6rGw2FdJV_f3qjCe-kB'; //保存先フォルダのID(Googleドライブ)
   const folder = DriveApp.getFolderById(folderId);
   const files = folder.getFiles();
   const now = new Date();
